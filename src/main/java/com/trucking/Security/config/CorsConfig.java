@@ -17,8 +17,9 @@ public class CorsConfig implements WebMvcConfigurer {
         registry.addMapping("/api/v1/**")
                 .allowedOrigins("http://localhost:3000","https://trucking-jebius.koyeb.app/**")
                 .allowedMethods("GET","POST","PUT", "DELETE")
-                .allowedHeaders(String.valueOf(Arrays.asList(HttpHeaders.CONTENT_TYPE, HttpHeaders.AUTHORIZATION, HttpHeaders.ACCEPT)))
-                .exposedHeaders("Access-Control-Allow-Origin: https://trucking-jebius.koyeb.app/", "Vary: Origin")
+                .allowedHeaders(HttpHeaders.CONTENT_TYPE, HttpHeaders.AUTHORIZATION, HttpHeaders.ACCEPT)
+                .exposedHeaders(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN, HttpHeaders.ACCESS_CONTROL_ALLOW_METHODS,
+                        HttpHeaders.ACCESS_CONTROL_ALLOW_CREDENTIALS, HttpHeaders.ACCESS_CONTROL_ALLOW_HEADERS)
                 .allowCredentials(true);
     }
 }
