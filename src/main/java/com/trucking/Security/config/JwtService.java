@@ -1,4 +1,4 @@
-package com.trucking.Security.config;
+package com.trucking.security.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -22,7 +22,7 @@ import java.util.function.Function;
 public class JwtService {
 
     @Value("${api.security.secret}")
-    String SECRET_KEY;
+    private String SECRET_KEY;
 
     /**
      * Genera un token JWT con reclamaciones adicionales y detalles de usuario.

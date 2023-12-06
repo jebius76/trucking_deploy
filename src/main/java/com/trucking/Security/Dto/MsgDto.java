@@ -1,7 +1,6 @@
-package com.trucking.Security.Dto;
+package com.trucking.security.dto;
 
 
-import java.time.LocalDate;
 import java.util.Date;
 
 public class MsgDto {

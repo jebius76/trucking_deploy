@@ -1,7 +1,7 @@
-package com.trucking.Service;
+package com.trucking.service.implement;
 
-import com.trucking.Entity.Company;
-import com.trucking.Repository.CompanyRepository;
+import com.trucking.entity.Company;
+import com.trucking.repository.CompanyRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

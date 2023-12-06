@@ -1,9 +1,8 @@
-package com.trucking.Service;
+package com.trucking.service;
 
-import com.trucking.Dto.VehicleDto;
+import com.trucking.dto.VehicleDto;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface VehicleService {
 

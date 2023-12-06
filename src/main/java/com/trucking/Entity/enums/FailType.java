@@ -1,4 +1,4 @@
-package com.trucking.Entity.Enum;
+package com.trucking.entity.enums;
 
 public enum FailType {
     SERIOUS,

@@ -1,4 +1,4 @@
-package com.trucking.Dto.ManType;
+package com.trucking.dto.mantype;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

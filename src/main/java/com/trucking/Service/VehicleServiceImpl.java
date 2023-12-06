@@ -1,13 +1,12 @@
-package com.trucking.Service;
+package com.trucking.service;
 
-import com.trucking.Dto.VehicleDto;
-import com.trucking.Entity.Company;
-import com.trucking.Entity.Fuel;
-import com.trucking.Entity.Vehicle;
-import com.trucking.Exception.NotFoundVehicle;
-import com.trucking.Mapper.VehicleMapper;
-import com.trucking.Repository.FuelRepository;
-import com.trucking.Repository.VehicleRepository;
+import com.trucking.dto.VehicleDto;
+import com.trucking.entity.Fuel;
+import com.trucking.entity.Vehicle;
+import com.trucking.exception.NotFoundVehicle;
+import com.trucking.mapper.VehicleMapper;
+import com.trucking.repository.FuelRepository;
+import com.trucking.repository.VehicleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +21,7 @@ public class VehicleServiceImpl implements VehicleService {
     private final VehicleRepository vehicleRepository;
     private final VehicleMapper vehicleMapper;
     private final FuelRepository fuelRepository;
+
     @Override
     public List<VehicleDto> getAll() {
         return vehicleMapper.toListDto(vehicleRepository.findAll());

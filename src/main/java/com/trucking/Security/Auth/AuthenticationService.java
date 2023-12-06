@@ -1,15 +1,16 @@
-package com.trucking.Security.Auth;
+package com.trucking.security.auth;
 
-import com.trucking.Entity.Company;
-import com.trucking.Repository.CompanyRepository;
-import com.trucking.Security.Dto.*;
-import com.trucking.Security.Entity.RoleName;
-import com.trucking.Security.Entity.User;
-import com.trucking.Security.HandlerError.ValidationIntegrity;
-import com.trucking.Security.Repository.UserRepository;
-import com.trucking.Security.Service.EmailService;
-import com.trucking.Security.Service.UserServiceImplement;
-import com.trucking.Security.config.JwtService;
+
+import com.trucking.entity.Company;
+import com.trucking.repository.CompanyRepository;
+import com.trucking.security.dto.*;
+import com.trucking.security.entity.RoleName;
+import com.trucking.security.entity.User;
+import com.trucking.security.exception.ValidationIntegrity;
+import com.trucking.security.repository.UserRepository;
+import com.trucking.security.config.JwtService;
+import com.trucking.security.service.EmailService;
+import com.trucking.security.service.UserServiceImplement;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import jakarta.mail.MessagingException;
@@ -176,7 +177,6 @@ public class AuthenticationService {
             Claims claims = Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(token).getBody();
             emailUser = claims.getSubject();
             userServiceImplement.updateUserByEmail(emailUser, passwordEncoder.encode(password));
-
         }
         var user = userRepository.
                 findByEmail(emailUser).

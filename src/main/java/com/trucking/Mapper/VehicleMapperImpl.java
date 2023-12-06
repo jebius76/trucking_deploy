@@ -1,8 +1,8 @@
-package com.trucking.Mapper;
+package com.trucking.mapper;
 
-import com.trucking.Dto.VehicleDto;
-import com.trucking.Entity.Vehicle;
-import com.trucking.Entity.Enum.VehicleType;
+import com.trucking.dto.VehicleDto;
+import com.trucking.entity.Vehicle;
+import com.trucking.entity.enums.VehicleType;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

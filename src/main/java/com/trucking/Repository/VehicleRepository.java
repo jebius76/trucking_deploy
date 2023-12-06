@@ -1,6 +1,6 @@
-package com.trucking.Repository;
+package com.trucking.repository;
 
-import com.trucking.Entity.Vehicle;
+import com.trucking.entity.Vehicle;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface VehicleRepository extends JpaRepository<Vehicle, Long> {

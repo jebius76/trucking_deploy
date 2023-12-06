@@ -1,6 +1,6 @@
-package com.trucking.Security.Repository;
+package com.trucking.security.repository;
 
-import com.trucking.Entity.RegMaint;
+import com.trucking.entity.RegMaint;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

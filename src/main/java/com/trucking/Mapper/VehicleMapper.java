@@ -1,7 +1,7 @@
-package com.trucking.Mapper;
+package com.trucking.mapper;
 
-import com.trucking.Dto.VehicleDto;
-import com.trucking.Entity.Vehicle;
+import com.trucking.dto.VehicleDto;
+import com.trucking.entity.Vehicle;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.validation.annotation.Validated;
 

@@ -1,4 +1,4 @@
-package com.trucking.Exception;
+package com.trucking.exception;
 
 public class NotFoundVehicle extends RuntimeException{
     public NotFoundVehicle() {

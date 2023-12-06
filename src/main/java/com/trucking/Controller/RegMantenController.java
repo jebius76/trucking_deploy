@@ -1,15 +1,14 @@
-package com.trucking.Controller;
+package com.trucking.controller;
 
 
-import com.trucking.Dto.RegMant.NewRegMantDto;
-import com.trucking.Dto.RegMant.UpdateRegMant;
-import com.trucking.Entity.RegMaint;
-import com.trucking.Exception.ManTypeNotFound;
-import com.trucking.Exception.NotFoundVehicle;
-import com.trucking.Security.Dto.AuthenticationResponseDto;
-import com.trucking.Security.Dto.ErrorMsgDto;
-import com.trucking.Security.Dto.MsgDto;
-import com.trucking.Service.Implement.RegMantServiceImplement;
+import com.trucking.dto.regmant.NewRegMantDto;
+import com.trucking.dto.regmant.UpdateRegMant;
+import com.trucking.entity.RegMaint;
+import com.trucking.exception.NotFoundVehicle;
+import com.trucking.security.dto.AuthenticationResponseDto;
+import com.trucking.security.dto.MsgDto;
+import com.trucking.service.implement.RegMantServiceImplement;
+
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

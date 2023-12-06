@@ -1,4 +1,4 @@
-package com.trucking.Security.config;
+package com.trucking.security.config;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

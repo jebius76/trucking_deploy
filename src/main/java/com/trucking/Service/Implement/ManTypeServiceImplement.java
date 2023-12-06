@@ -1,9 +1,9 @@
-package com.trucking.Service.Implement;
+package com.trucking.service.implement;
 
-import com.trucking.Dto.ManType.ManTypesDto;
-import com.trucking.Entity.ManType;
-import com.trucking.Repository.ManTypeRepository;
-import com.trucking.Service.ManTypeService;
+import com.trucking.dto.mantype.ManTypesDto;
+import com.trucking.entity.ManType;
+import com.trucking.repository.ManTypeRepository;
+import com.trucking.service.ManTypeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

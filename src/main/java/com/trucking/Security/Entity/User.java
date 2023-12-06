@@ -1,6 +1,6 @@
-package com.trucking.Security.Entity;
+package com.trucking.security.entity;
 
-import com.trucking.Entity.Company;
+import com.trucking.entity.Company;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

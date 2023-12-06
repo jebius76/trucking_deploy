@@ -1,7 +1,7 @@
-package com.trucking.Entity;
+package com.trucking.entity;
 
-import com.trucking.Entity.Enum.FailState;
-import com.trucking.Entity.Enum.FailType;
+import com.trucking.entity.enums.FailState;
+import com.trucking.entity.enums.FailType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

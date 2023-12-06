@@ -1,12 +1,11 @@
-package com.trucking.Security.HandlerError;
+package com.trucking.security.exception;
 
-import com.trucking.Security.Dto.ErrorMsgDto;
+import com.trucking.security.dto.ErrorMsgDto;
 import jakarta.mail.AuthenticationFailedException;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.ValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;

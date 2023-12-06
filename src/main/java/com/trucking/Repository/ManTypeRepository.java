@@ -1,6 +1,6 @@
-package com.trucking.Repository;
+package com.trucking.repository;
 
-import com.trucking.Entity.ManType;
+import com.trucking.entity.ManType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -8,6 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface ManTypeRepository extends JpaRepository<ManType, Long> {
-
-       public Optional<ManType> findByName(String name);
+       Optional<ManType> findByName(String name);
 }

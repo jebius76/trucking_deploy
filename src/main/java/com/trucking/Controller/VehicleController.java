@@ -1,17 +1,15 @@
-package com.trucking.Controller;
+package com.trucking.controller;
 
-import com.trucking.Dto.VehicleDto;
-import com.trucking.Service.VehicleService;
+import com.trucking.dto.VehicleDto;
+import com.trucking.service.VehicleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
-@RequestMapping("api/v1/vehicle")
+@RequestMapping("/vehicle")
 @RequiredArgsConstructor
 public class VehicleController {
 

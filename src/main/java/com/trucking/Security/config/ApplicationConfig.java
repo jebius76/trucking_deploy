@@ -1,6 +1,6 @@
-package com.trucking.Security.config;
+package com.trucking.security.config;
 
-import com.trucking.Security.Repository.UserRepository;
+import com.trucking.security.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

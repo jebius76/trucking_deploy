@@ -1,9 +1,6 @@
-package com.trucking.Dto.RegMant;
+package com.trucking.dto.regmant;
 
 
-import com.trucking.Entity.ManType;
-import com.trucking.Entity.Vehicle;
-import com.trucking.Security.Entity.User;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;

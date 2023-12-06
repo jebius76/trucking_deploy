@@ -1,11 +1,13 @@
-package com.trucking.Security.Service;
+package com.trucking.security.service;
 
-import com.trucking.Security.Dto.DataForgotPasswordDto;
-import com.trucking.Security.config.JwtService;
+import com.trucking.security.dto.DataForgotPasswordDto;
+import com.trucking.security.config.JwtService;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.beans.factory.annotation.Value;
+
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
@@ -29,7 +31,7 @@ public class EmailService {
     @Value("${spring.mail.username}")
     private String emailFrom;
 
-    public void setEmail(DataForgotPasswordDto dataForgotPasswordDto) throws MessagingException {
+    public void setEmail(DataForgotPasswordDto dataForgotPasswordDto){
         MimeMessage message = javaMailSender.createMimeMessage();
         try {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);

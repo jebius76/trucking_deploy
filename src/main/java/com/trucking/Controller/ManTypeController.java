@@ -1,9 +1,9 @@
-package com.trucking.Controller;
+package com.trucking.controller;
 
-import com.trucking.Dto.ManType.ManTypesDto;
-import com.trucking.Entity.ManType;
-import com.trucking.Security.Dto.AuthenticationResponseDto;
-import com.trucking.Service.Implement.ManTypeServiceImplement;
+import com.trucking.dto.mantype.ManTypesDto;
+import com.trucking.entity.ManType;
+import com.trucking.security.dto.AuthenticationResponseDto;
+import com.trucking.service.implement.ManTypeServiceImplement;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

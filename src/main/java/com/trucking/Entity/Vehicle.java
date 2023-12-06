@@ -1,6 +1,6 @@
-package com.trucking.Entity;
+package com.trucking.entity;
 
-import com.trucking.Entity.Enum.VehicleType;
+import com.trucking.entity.enums.VehicleType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -41,5 +41,9 @@ public class Vehicle {
     private List<RegMaint> maintenance;
     @OneToMany
     private List<Fail> fails;
+
+    @OneToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "idRoute")
+    private Route route;
 
 }

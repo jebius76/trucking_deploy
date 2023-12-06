@@ -1,8 +1,12 @@
-package com.trucking.Security.Auth;
+package com.trucking.security.auth;
 
-import com.trucking.Security.Dto.*;
-import com.trucking.Security.HandlerError.ValidationIntegrity;
+
+import com.trucking.security.dto.*;
+
+
+import com.trucking.security.exception.ValidationIntegrity;
 import io.jsonwebtoken.ExpiredJwtException;
+
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -38,13 +42,6 @@ public class AuthController {
             summary = "Controller para registrar un usuario",
             description = "Todos pueden generar un registro",
             responses = {
-                    @ApiResponse(
-                            responseCode = "200",
-                            description = "Success",
-                            content = {
-                                    @Content(mediaType = "application/json",
-                                            schema = @Schema(implementation = AuthenticationResponseDto.class))}
-                    ),
                     @ApiResponse(
                             responseCode = "201",
                             description = "Created",

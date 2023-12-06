@@ -1,13 +1,11 @@
-package com.trucking.Service;
+package com.trucking.service;
 
-import com.trucking.Dto.RegMant.UpdateRegMant;
-import com.trucking.Entity.ManType;
-import com.trucking.Entity.RegMaint;
-import com.trucking.Dto.RegMant.NewRegMantDto;
+import com.trucking.dto.regmant.NewRegMantDto;
+import com.trucking.dto.regmant.UpdateRegMant;
+import com.trucking.entity.RegMaint;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public interface RegMantService {

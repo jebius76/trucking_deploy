@@ -1,6 +1,6 @@
-package com.trucking.Security.config;
+package com.trucking.security.config;
 
-import com.trucking.Security.Entity.RoleName;
+import com.trucking.security.entity.RoleName;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -36,17 +36,15 @@ public class SecurityConfig {
         httpSecurity
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(
-                        auth -> {
-                            auth
-                                    .requestMatchers("/auth/**").permitAll()
-                                    .requestMatchers("/reg-mant/**").hasAnyAuthority(
-                                            RoleName.ADMIN.name(),
-                                            RoleName.OWNER.name(),
-                                            RoleName.MAINTENANCE.name()
-                                    )
-                                    .requestMatchers("/swagger-ui.html", "/v3/api-docs/**", "/swagger-ui/**").permitAll()
-                                    .anyRequest().authenticated();
-                        }
+                        auth -> auth
+                                .requestMatchers("/auth/**").permitAll()
+                                .requestMatchers("/reg-mant/**","/routes/**").hasAnyAuthority(
+                                        RoleName.ADMIN.name(),
+                                        RoleName.OWNER.name(),
+                                        RoleName.MAINTENANCE.name()
+                                )
+                                .requestMatchers("/swagger-ui.html", "/v3/api-docs/**", "/swagger-ui/**").permitAll()
+                                .anyRequest().authenticated()
                 ).sessionManagement(
                         session -> {
                             session

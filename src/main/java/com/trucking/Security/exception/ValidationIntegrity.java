@@ -1,4 +1,4 @@
-package com.trucking.Security.HandlerError;
+package com.trucking.security.exception;
 
 
 public class ValidationIntegrity  extends RuntimeException {

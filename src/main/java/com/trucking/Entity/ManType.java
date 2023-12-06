@@ -1,4 +1,4 @@
-package com.trucking.Entity;
+package com.trucking.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;

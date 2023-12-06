@@ -1,6 +1,6 @@
-package com.trucking.Security.Dto;
+package com.trucking.security.dto;
 
-import com.trucking.Security.Entity.RoleName;
+import com.trucking.security.entity.RoleName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

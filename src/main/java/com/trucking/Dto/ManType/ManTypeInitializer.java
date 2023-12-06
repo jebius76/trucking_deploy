@@ -1,7 +1,7 @@
-package com.trucking.Dto.ManType;
+package com.trucking.dto.mantype;
 
-import com.trucking.Entity.ManType;
-import com.trucking.Repository.ManTypeRepository;
+import com.trucking.entity.ManType;
+import com.trucking.repository.ManTypeRepository;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

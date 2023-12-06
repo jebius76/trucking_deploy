@@ -1,7 +1,7 @@
-package com.trucking.Repository;
+package com.trucking.repository;
 
-import com.trucking.Entity.Company;
-import com.trucking.Entity.Fuel;
+import com.trucking.entity.Company;
+import com.trucking.entity.Fuel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

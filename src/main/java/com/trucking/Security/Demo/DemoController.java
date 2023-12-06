@@ -1,4 +1,4 @@
-package com.trucking.Security.Demo;
+package com.trucking.security.demo;
 
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;

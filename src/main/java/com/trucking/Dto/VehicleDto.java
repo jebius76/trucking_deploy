@@ -1,4 +1,4 @@
-package com.trucking.Dto;
+package com.trucking.dto;
 
 import lombok.*;
 

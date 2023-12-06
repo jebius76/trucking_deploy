@@ -1,7 +1,7 @@
-package com.trucking.Security.Service;
+package com.trucking.security.service;
 
-import com.trucking.Security.Entity.User;
-import com.trucking.Security.Repository.UserRepository;
+import com.trucking.security.entity.User;
+import com.trucking.security.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
