@@ -1,4 +1,4 @@
-package com.trucking.security.config;
+package com.trucking.Security.config;
 
 
 import org.springframework.context.annotation.Configuration;

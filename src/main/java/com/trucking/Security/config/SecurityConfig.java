@@ -43,7 +43,7 @@ public class SecurityConfig {
                                         RoleName.OWNER.name(),
                                         RoleName.MAINTENANCE.name()
                                 )
-                                .requestMatchers("/reg-mant/**").hasAnyAuthority(
+                                .requestMatchers("/vehicle/**").hasAnyAuthority(
                                         RoleName.ADMIN.name(),
                                         RoleName.OWNER.name(),
                                         RoleName.MAINTENANCE.name()
