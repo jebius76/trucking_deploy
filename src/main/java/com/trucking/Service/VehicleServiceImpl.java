@@ -76,7 +76,8 @@ public class VehicleServiceImpl implements VehicleService {
 
         vehicle.setFuel(actualFuel);
         vehicle.setVehicleType(actualVehicleType);
-        user.getCompany().getVehicles().add(vehicle);
+
+        vehicle.setCompany(user.getCompany());
 
         return vehicleMapper.toDto(vehicleRepository.save(vehicle));
     }
