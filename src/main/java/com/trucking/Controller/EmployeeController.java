@@ -47,12 +47,12 @@ public class EmployeeController {
 
     @GetMapping("/allEmployees")
     @PreAuthorize("OWNER")
-    public ResponseEntity<?> allEmployees( @RequestBody String token){
+    public ResponseEntity<?> allEmployees(){
         try {
-            List<DataShowEmployee> employeeList = employeeServiceImplement.getAllEmployees(token);
-            return new ResponseEntity<>("Empleado creado exitosamente, "+ employeeList, HttpStatus.OK);
+            List<DataShowEmployee> employeeList = employeeServiceImplement.getAllEmployees();
+            return new ResponseEntity<>(employeeList, HttpStatus.OK);
         }catch (Exception e){
-            return new ResponseEntity<>("Error al trare todos los empleados", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Error al traer todos los empleados", HttpStatus.BAD_REQUEST);
         }
     }
 
@@ -103,9 +103,9 @@ public class EmployeeController {
 
     @DeleteMapping("/deleteEmployee/{id}")
     @PreAuthorize("OWNER")
-    public ResponseEntity<?> deleteEmployee(@PathVariable long id,  @RequestBody String token){
+    public ResponseEntity<?> deleteEmployee(@PathVariable long id){
         try {
-            DataShowEmployee delete = employeeServiceImplement.delete(id, token);
+            DataShowEmployee delete = employeeServiceImplement.delete(id);
             return new ResponseEntity<>("Empleado eliminado exitosamente", HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity<>("Error al eliminar el empleado" + e.getMessage(), HttpStatus.BAD_REQUEST);
