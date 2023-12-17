@@ -18,7 +18,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-@AllArgsConstructor
 public class EmailService {
 
     @Autowired
@@ -31,6 +30,11 @@ public class EmailService {
 
     @Value("${spring.mail.username}")
     private String emailFrom;
+
+    public EmailService(JavaMailSender javaMailSender, TemplateEngine templateEngine) {
+        this.javaMailSender = javaMailSender;
+        this.templateEngine = templateEngine;
+    }
 
     public void setEmail(DataForgotPasswordDto dataForgotPasswordDto){
         MimeMessage message = javaMailSender.createMimeMessage();
