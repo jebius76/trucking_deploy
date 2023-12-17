@@ -1,4 +1,4 @@
-package com.trucking.security.service;
+package com.trucking.service;
 
 import com.trucking.security.dto.ChangePasswordDto;
 import com.trucking.security.dto.DataChangePasswordEmployee;

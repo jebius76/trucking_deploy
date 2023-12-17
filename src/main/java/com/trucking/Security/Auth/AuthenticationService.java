@@ -9,7 +9,7 @@ import com.trucking.security.entity.User;
 import com.trucking.security.exception.ValidationIntegrity;
 import com.trucking.security.repository.UserRepository;
 import com.trucking.security.config.JwtService;
-import com.trucking.security.service.EmailService;
+import com.trucking.service.EmailService;
 import com.trucking.security.service.UserServiceImplement;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
