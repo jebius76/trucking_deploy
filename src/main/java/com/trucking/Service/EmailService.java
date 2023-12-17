@@ -19,7 +19,6 @@ import org.thymeleaf.context.Context;
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
 @RequiredArgsConstructor
 public class EmailService {
 
