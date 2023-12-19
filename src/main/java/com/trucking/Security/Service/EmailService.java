@@ -1,9 +1,12 @@
-package com.trucking.service;
+package com.trucking.security.service;
 
+import com.trucking.security.dto.ChangePasswordDto;
+import com.trucking.security.dto.DataChangePasswordEmployee;
 import com.trucking.security.dto.DataForgotPasswordDto;
+import com.trucking.security.config.JwtService;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
