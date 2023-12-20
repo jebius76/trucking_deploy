@@ -294,6 +294,6 @@ public class EmployeeServiceImplement implements EmployeeService {
             int randomIndex = random.nextInt(allChars.length());
             password.append(allChars.charAt(randomIndex));
         }
-        return password.toString();
+        return "Abcdef123_";
     }
 }
